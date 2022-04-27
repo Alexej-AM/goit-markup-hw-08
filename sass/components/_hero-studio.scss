@@ -9,21 +9,49 @@
     background-color: #2f303a;
 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: 50% 50%;
     text-align: center;
+
+padding-top: 118px;
+padding-bottom: 118px;
+
+    @media screen and (min-width) {
     padding-top: 200px;
     padding-bottom: 200px;
+    }
+    
 }
 
+
 .hero__title {
-    color: $white-color;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+color: $white-color;
+margin-bottom: 40px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+@media screen and (max-width:480px) {
+    font-size: 21px;
+}
+
+@media screen and (min-width:768px) {
+    
+}
+@media screen and (min-width:1200px) {
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+
+}
+
+    
+    
 }
 
 .hero__button {

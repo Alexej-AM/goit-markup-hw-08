@@ -11,16 +11,16 @@
 overflow-y: scroll;
 
     transform: translateX(100%);
-    // visibility: hidden;
-    // pointer-events: none;
+    visibility: hidden;
+    pointer-events: none;
     transition: transform 250ms $transition-timing-function;
 
 
 
     &.is-open{
         transform: translateX(0);
-        // visibility: visible;
-        // pointer-events: initial;
+        visibility: visible;
+        pointer-events: initial;
     }
 }
 
