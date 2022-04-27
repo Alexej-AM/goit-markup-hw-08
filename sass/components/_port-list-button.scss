@@ -1,0 +1,39 @@
+.port-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.port-list__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.port-list__holder {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: 1px solid transparent;
+
+    border-radius: 4px;
+
+    color: $primary-color;
+    background-color: #f5f4fa;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: pointer;
+
+    transition: color 250ms $transition-timing-function,
+        background-color 250ms $transition-timing-function,
+        box-shadow 250ms $transition-timing-function;
+
+&:hover,
+&:focus {
+    color: $white-color;
+    background-color: $blue-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);}
+}
+

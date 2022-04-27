@@ -1,0 +1,39 @@
+.mobile-btn {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    &__icon-open {
+        opacity: 1;
+    
+    }
+    
+    &__icon-close {
+        opacity: 0;
+    }
+
+ 
+}
+
+.mobile-btn.is-active .mobile-btn__icon-close{
+    opacity: 1;
+}
+.mobile-btn.is-active .mobile-btn__icon-open {
+    opacity: 0;
+}
+
