@@ -1,7 +1,7 @@
 .mobile-btn {
     position: relative;
     display: block;
-    
+
     z-index: 10;
 
     border: transparent;
@@ -16,29 +16,30 @@
         width: 40px;
         height: 40px;
 
-        .mobile-btn:hover, 
-        .mobile-btn:focus &{
-            fill:$blue-color;
-    }
+        .mobile-btn:hover,
+        .mobile-btn:focus & {
+            fill: $blue-color;
+        }
     
-    &__icon-open {
-        opacity: 1;
-    
-    }
-    
-    &__icon-close {
-        opacity: 0;
-    }
 
- 
+        &__icon-open {
+            opacity: 1;
+
+        }
+
+       
+    }
 }
-
-
-
-.mobile-btn.is-active .mobile-btn__icon-close{
-    opacity: 1;
-}
-.mobile-btn.is-active .mobile-btn__icon-open {
+.mobile-btn__icon-close {
     opacity: 0;
 }
 
+
+
+    .mobile-btn.is-active .mobile-btn__icon-close {
+        opacity: 1;
+    }
+
+    .mobile-btn.is-active .mobile-btn__icon-open {
+        opacity: 0;
+    }

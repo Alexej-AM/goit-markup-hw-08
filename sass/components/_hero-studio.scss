@@ -3,14 +3,39 @@
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 50%;
+background-color: #2f303a;
+
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
+        url(/images/bg-hero_s.png);
+        @include mq(retina){
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg-hero_s@2x.png)
+        } 
 
-    background-color: #2f303a;
+        @include mq(tablet){
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(/images/bg-hero_m.png);
+            
+            @include mq (retina) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg-hero_m@2x.png)
+            }
+        }
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+@include mq(desktop) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/bg-hero_l.png);
+
+    @include mq (retina) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bg-hero_l@2x.png)
+    }
+}
+
+
+    
+
+    
     text-align: center;
 
 padding-top: 118px;

@@ -1,7 +1,7 @@
 @import "./base/fonts";
 @import "./base/normalize";
 @import "./utils/vars" ;
-
+@import "./utils/mixins";
 @import "./utils/container";
 @import "./utils/visually-hidden";
 @import "./components/page-header";
@@ -18,3 +18,4 @@
 @import "./components/port-card-set";
 @import "./components/footer-page";
 @import "./utils/section";
+
