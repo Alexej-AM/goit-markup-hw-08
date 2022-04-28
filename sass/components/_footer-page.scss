@@ -184,12 +184,8 @@
 }
 
 .form-subscribe__input {
-@media screen and (max-width:1199px) {
-    margin-bottom: 20px;
-}
-
+width: 290px;
     display: inline-block;
-    width: 358px;
     outline: none;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -198,6 +194,15 @@
     padding-bottom: 15px;
     padding-left: 16px;
     transition: border-color 250ms $transition-timing-function;
+
+    
+@media screen and (min-width:480px) {
+    width: 358px;
+}
+
+@media screen and (max-width:1199px) {
+    margin-bottom: 20px;
+}
 
     &:focus-within {
         border-color: $blue-color;

@@ -49,6 +49,20 @@
 }
 
 .benefits__box {
+
+    @media screen and(min-width:480px) {
+        width: 450px;
+        height: 120px;
+    }
+@media screen and(min-width:768px) {
+    width: 354px;
+    height: 120px;
+}
+@media screen and(min-width:1200px) {
+    width: 270px;
+    height: 120px;
+}
+
     display: flex;
     justify-content: center;
     align-items: center;
