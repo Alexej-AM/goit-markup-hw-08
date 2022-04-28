@@ -1558,6 +1558,12 @@ img {
   padding-top: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .section--nopaddingtop {
+    display: none;
+  }
+}
+
 .section__title {
   margin-bottom: 50px;
   color: #212121;
