@@ -9,26 +9,26 @@ background-position: 50% 50%;
 background-color: #2f303a;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./images/bg-hero_s.png);
+        url(../images/bg-hero_s.png);
         @include mq(retina){
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/bg-hero_s@2x.png)
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero_s@2x.png)
         } 
 
         @include mq(tablet){
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(./images/bg-hero_m.png);
+            url(../images/bg-hero_m.png);
             
             @include mq (retina) {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/bg-hero_m@2x.png)
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero_m@2x.png)
             }
         }
 
 @include mq(desktop) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./images/bg-hero_l.png);
+        url(../images/bg-hero_l.png);
 
     @include mq (retina) {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/bg-hero_l@2x.png)
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero_l@2x.png)
     }
 }
 
