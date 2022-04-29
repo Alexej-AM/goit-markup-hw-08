@@ -3,7 +3,8 @@
 // height: 581px;
 
 
-    
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
@@ -27,10 +28,15 @@
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .form__field--size {
     margin-bottom: 20px;
+
+    @media screen and (max-width:479px) {
+        margin-bottom: 10px;
+    }
 }
 
 .form__label {
@@ -47,10 +53,9 @@ width: 370px;
 
     position: relative;
     
-    margin-right: auto;
-    margin-left: auto;
+    
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:479px) {
     width: 220px;
 }
 
@@ -71,7 +76,7 @@ width: 370px;
     padding-left: 42px;
     transition: border-color 250ms $transition-timing-function;
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:479px) {
     width: 220px;
 }
 
@@ -113,7 +118,7 @@ width: 370px;
     margin-left: auto;
     transition: border-color 250ms $transition-timing-function;
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:479px) {
     width: 220px;
 }
 
@@ -137,11 +142,16 @@ width: 370px;
 
 
 .form-checkbox {
+
     position: relative;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width:479px) {
+        margin-bottom: 10px;
+    }
 }
 
 .form-checkbox__label {
@@ -179,7 +189,7 @@ width: 370px;
     letter-spacing: 0.03em;
     color: #757575;
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:479px) {
     width: 250px;
 }
 
@@ -225,8 +235,11 @@ width: 370px;
 
 .backdrop-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: 8px;
     width: 30px;
     height: 30px;
     border-radius: 50%;

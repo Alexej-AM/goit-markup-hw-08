@@ -876,6 +876,16 @@ img {
 }
 
 .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -900,14 +910,6 @@ img {
           transform: translateX(0);
   visibility: visible;
   pointer-events: initial;
-}
-
-.mobile-nav {
-  margin-bottom: 302px;
-}
-
-.mobile-contacts {
-  margin-bottom: 64px;
 }
 
 .mobile-social {
@@ -1111,6 +1113,7 @@ img {
   background: rgba(0, 0, 0, 0.2);
   visibility: visible;
   overflow-y: scroll;
+  z-index: 100;
 }
 
 .is-hidden {
@@ -1132,10 +1135,10 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .hero__modal {
-    height: 609px;
-    width: 300px;
+    height: 568px;
+    width: 320px;
   }
 }
 
@@ -1147,6 +1150,13 @@ img {
 }
 
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
@@ -1178,6 +1188,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 479px) {
+  .form__field--size {
+    margin-bottom: 10px;
+  }
+}
+
 .form__label {
   text-align: left;
   font-size: 12px;
@@ -1190,11 +1206,9 @@ img {
 .form__wrap {
   width: 370px;
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .form__wrap {
     width: 220px;
   }
@@ -1221,7 +1235,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .form__contacts {
     width: 220px;
   }
@@ -1266,7 +1280,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .form__textarea {
     width: 220px;
   }
@@ -1328,6 +1342,12 @@ img {
           align-items: center;
 }
 
+@media screen and (max-width: 479px) {
+  .form-checkbox {
+    margin-bottom: 10px;
+  }
+}
+
 .form-checkbox__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1371,7 +1391,7 @@ img {
   color: #757575;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .form-checkbox_text {
     width: 250px;
   }
@@ -1426,8 +1446,17 @@ img {
 
 .backdrop-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
