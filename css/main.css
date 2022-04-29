@@ -920,7 +920,7 @@ img {
   .mobile-social {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px 50px;
   }
 }
 
