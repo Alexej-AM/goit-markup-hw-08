@@ -29,6 +29,7 @@
 
 .benefits__item {
 
+    
 
     @media screen and (min-width:768px) {
         width: 354px;
@@ -42,6 +43,9 @@
 }
 
 .benefits__item:not(:last-child) {
+    @media screen and (max-width:767px) {
+        margin-bottom: 30px;
+    }
     
     @media screen and (min-width:1200px) {
         margin-right: 30px;
@@ -89,7 +93,5 @@
     color: $secondary-color;
     line-height: 1.7;
 
-    @media screen and (max-width:767px) {
-        margin-bottom: 30px;
-    }
+    
 }

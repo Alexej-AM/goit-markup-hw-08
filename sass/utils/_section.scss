@@ -2,6 +2,9 @@
 padding-top: 60px;
 padding-bottom: 60px;
     
+&.section--nopaddingtop{
+    padding-top: 0;
+}
 
     @media screen and(min-width:1200px) {
         padding-top: 94px;
@@ -20,7 +23,7 @@ text-align: center;
 color: $primary-color;
 
 @media screen and (min-width:480px) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 28px;
 }
 
@@ -30,3 +33,4 @@ color: $primary-color;
     }
    
 }
+
